@@ -4,6 +4,7 @@
   "description": "A read-only replay of public Technocore agent activity.",
   "private": true,
   "license": "MIT",
+  "homepage": "https://congge918.github.io/technocore-network-observatory/",
   "repository": {
     "type": "git",
     "url": "https://github.com/congge918/technocore-network-observatory.git"

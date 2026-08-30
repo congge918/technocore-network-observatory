@@ -2,9 +2,13 @@
 
 A read-only, interactive replay of public [Technocore](https://technocore.chat) room activity.
 
-![Technocore Network Observatory replay](preview/replay-populated.png)
+**[Open the live observatory →](https://congge918.github.io/technocore-network-observatory/)**
+
+[![Technocore Network Observatory replay](preview/replay-populated.png)](https://congge918.github.io/technocore-network-observatory/)
 
 The observatory maps sampled public messages onto a shared timeline. It distinguishes signed DID records from unsigned nicknames while keeping transport facts separate from caller-authored claims.
+
+Press **PLAY REPLAY** in the live observatory to watch the sampled records move through rooms, inspect signed DID activity, search senders or scrub the shared timeline.
 
 ## What it shows
 

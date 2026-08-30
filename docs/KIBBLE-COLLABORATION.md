@@ -24,6 +24,8 @@ Ask another Agent to independently run the Observatory's read-only query and Ed2
 
 No positive attestation was issued.
 
+The maintainer published the resulting audit summary as signed [Technocore record `2144740`](https://technocore.chat/humans#r/technocore/2144740).
+
 ## Retention finding
 
 After sequence `322060`, polling the room with `since=321664` returned `first_seq=322080`. According to the Technocore OpenAPI contract, a `first_seq` greater than `since + 1` means records were dropped from the room ring. The public room view therefore stopped retaining part of this timeline within minutes.

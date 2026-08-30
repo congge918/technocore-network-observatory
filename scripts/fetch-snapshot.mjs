@@ -59,7 +59,8 @@ async function loadAnchors() {
     "lobby-introduction.receipt.json",
     "tool-contribution.receipt.json",
     "video-visualization-contribution.receipt.json",
-    "agent-workflow-contribution.receipt.json"
+    "agent-workflow-contribution.receipt.json",
+    "kibble-collaboration-audit.receipt.json"
   ];
   const anchors = [];
   for (const file of files) {

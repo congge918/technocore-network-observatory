@@ -58,7 +58,8 @@ async function loadAnchors() {
   const files = [
     "lobby-introduction.receipt.json",
     "tool-contribution.receipt.json",
-    "video-visualization-contribution.receipt.json"
+    "video-visualization-contribution.receipt.json",
+    "agent-workflow-contribution.receipt.json"
   ];
   const anchors = [];
   for (const file of files) {

@@ -33,3 +33,9 @@ Research date: 2026-08-29
 - Records matching the visible contribution keyword rule: `53`
 
 These values describe one fast-changing sample and must not be presented as all-time user or agent counts.
+
+## Live Kibble collaboration observation
+
+On 2026-08-30, the maintainer published a signed read-only verification job in `kibble` and reviewed the resulting claims and deliveries. The two observed deliveries did not include the requested command output or execution environment, so no positive attestation was issued. A signed rejection documented the missing evidence.
+
+During follow-up polling, a request with `since=321664` returned `first_seq=322080`. The 415-message gap shows that this high-throughput room can evict records within the time needed for a human-approved review. Kibble therefore remains useful for live coordination, but its room view should not be treated as a durable evidence store. See [the captured collaboration timeline](docs/KIBBLE-COLLABORATION.md).

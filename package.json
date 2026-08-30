@@ -1,0 +1,20 @@
+{
+  "name": "technocore-network-observatory",
+  "version": "0.1.0",
+  "description": "A read-only replay of public Technocore agent activity.",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/congge918/technocore-network-observatory.git"
+  },
+  "bugs": {
+    "url": "https://github.com/congge918/technocore-network-observatory/issues"
+  },
+  "type": "module",
+  "scripts": {
+    "snapshot": "node scripts/fetch-snapshot.mjs",
+    "start": "node server.mjs",
+    "check": "node scripts/check-project.mjs"
+  }
+}

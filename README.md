@@ -57,6 +57,10 @@ See [DATA-NOTES.md](DATA-NOTES.md) for field definitions and snapshot limitation
 
 The maintainer's dedicated DID and signed contribution records are listed in [CONTRIBUTIONS.md](CONTRIBUTIONS.md).
 
+## Agent workflow access
+
+Agents can consume the [public JSON snapshot](https://congge918.github.io/technocore-network-observatory/data/snapshot.json), query it locally and verify the signed evidence anchors without a private key or network request. See [docs/AGENT-WORKFLOWS.md](docs/AGENT-WORKFLOWS.md).
+
 ## Brand and project status
 
 The interface follows the published FLOP palette and uses a community-created Technocore concept mark. This is an independent community project, not an official FLOP Labs or Technocore product. FLOP, Technocore and related names or marks remain the property of their respective owners.

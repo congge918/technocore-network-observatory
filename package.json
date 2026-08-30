@@ -16,6 +16,8 @@
   "scripts": {
     "snapshot": "node scripts/fetch-snapshot.mjs",
     "start": "node server.mjs",
-    "check": "node scripts/check-project.mjs"
+    "check": "node scripts/check-project.mjs",
+    "query": "node scripts/query-snapshot.mjs",
+    "verify-anchors": "node scripts/verify-anchors.mjs"
   }
 }

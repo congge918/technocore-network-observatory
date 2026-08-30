@@ -45,7 +45,7 @@ function normalizeMessage(room, message, source = "public-room-snapshot") {
     ts: String(message.ts),
     from,
     text,
-    nonce: message.nonce ?? null,
+    nonce: message.nonce == null ? null : String(message.nonce),
     signed: from.startsWith("did:key:"),
     hasReference: REFERENCE_RE.test(text),
     signal: signalFor(text),
@@ -55,7 +55,11 @@ function normalizeMessage(room, message, source = "public-room-snapshot") {
 
 async function loadAnchors() {
   const signerRoot = resolve("..", "technocore-human-approved-signer");
-  const files = ["lobby-introduction.receipt.json", "tool-contribution.receipt.json"];
+  const files = [
+    "lobby-introduction.receipt.json",
+    "tool-contribution.receipt.json",
+    "video-visualization-contribution.receipt.json"
+  ];
   const anchors = [];
   for (const file of files) {
     try {
@@ -68,7 +72,7 @@ async function loadAnchors() {
             ts: receipt.server_timestamp,
             from: receipt.did,
             text: receipt.text,
-            nonce: Number(receipt.nonce)
+            nonce: receipt.nonce
           },
           "public-local-receipt"
         ),
